@@ -1,0 +1,98 @@
+a:link {
+	text-decoration: none; color: black;
+}
+
+a:visited { 
+	text-decoration: none; color: black; 
+}
+
+body {
+	margin: 0;
+	background: #ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	margin: 50px 50px 24px 50px;
+	width: 160px;
+
+}
+
+#date{
+	font-size: 36px;
+	font-family: 'cousine';
+
+}
+
+#date:hover {
+	text-shadow: 4px 4px #efc4d5;
+}
+
+
+
+#big_container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#month_text { 
+	font-size: 36px;
+	font-family: 'cousine';
+	margin-bottom: 32px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.day {
+	height: 72px;
+	width: 72px;
+	margin: 12px;
+	border-radius: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+
+}
+
+#number{	
+	font-size: 20px;
+	font-weight: 900;
+	position: absolute;
+	z-index: 1;
+}
+
+.day img{
+	width: 72px;
+	height: 72px;
+	border-radius: 4%;
+	overflow: hidden;
+	object-fit: cover;
+	opacity: 0.4;
+	transform: rotate(90deg);
+
+}
+
+.day img:hover {
+	opacity: .8;
+	transition: .5s;
+}
+
+.day.x:hover{
+	background-color: #efc4d5;
+}
+
+

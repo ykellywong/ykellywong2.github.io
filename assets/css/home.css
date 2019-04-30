@@ -1,0 +1,85 @@
+a:link {
+	text-decoration: none; color: black;
+}
+
+a:visited { 
+	text-decoration: none; color: black; 
+}
+
+header {
+	margin: 80px 0px 50px 0px;
+}
+
+body {
+	margin: 0;
+	background: #ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#title {
+  	font-size: 36px;
+  	width: 460px;
+	font-family: 'cousine';
+	overflow: hidden; 
+	border-right: solid black;
+	white-space: nowrap; 
+	margin: 0 auto;
+	animation: 
+	typing 8s steps(21, end),
+	blink-caret .3s step-end infinite;
+	animation-iteration-count: infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  25% { width: 460px }
+  50% { width: 460px }
+  75% { width: 0 }
+  100% { width: 0 }
+}
+
+
+#big_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+#month {
+	font-size: 20px;
+	font-weight: 900;
+	position: absolute;
+	z-index: 1;
+}
+
+.month_card {
+
+	height: 160px;
+	width: 320px;
+	margin: 50px;
+	border-radius: 4%;
+	background-color: #f2f2f2;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+.month_card:hover {
+	background-color: #efc4d5;
+	transition: .5s;
+
+}
